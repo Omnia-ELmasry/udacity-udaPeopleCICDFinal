@@ -122,9 +122,9 @@ jobs:
           root: ~/
           paths:
             - project/.circleci/ansible/inventory.txt
-#   configure-infrastructure:
+  configure-infrastructure:
     docker:
-      - image: mareimorsy/aws-node
+      - image: cimg/base:stable
     steps:
       - checkout
       - add_ssh_keys:
